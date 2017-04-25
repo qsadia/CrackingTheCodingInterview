@@ -71,7 +71,7 @@ public class EngishInteger {
 			}
 		}
 		else if (num > 0){
-			sb.append(small[num]);
+			sb.append(small[num]).append(" ");
 		}
 
 		return sb.toString();
@@ -79,7 +79,15 @@ public class EngishInteger {
 
 	public static void main(String[] args) {
 		EngishInteger e = new EngishInteger();
-		System.out.println(e.convertToEnglish(1689987600));
+		System.out.println(e.convertToEnglish(1999999999));
+		System.out.println(e.convertToEnglish(-2000000000));
+		System.out.println(e.convertToEnglish(100));
+		System.out.println(e.convertToEnglish(0));
+		System.out.println(e.convertToEnglish(1000));
+		System.out.println(e.convertToEnglish(17000));
+		System.out.println(e.convertToEnglish(876000));
+		System.out.println(e.convertToEnglish(5300657));
+		System.out.println(e.convertToEnglish(98000000));
 	}
 
 }
